@@ -1,0 +1,257 @@
+{
+  "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "cuda_available": true,
+  "device_name": "Tesla T4",
+  "device_count": 2,
+  "calls": [
+    {
+      "index": 0,
+      "subset": "('Romanian', 'Romania')",
+      "category": "Geography / buildings / landmarks",
+      "_raw_options_field": "['a hotel', 'place for lifeguards', 'a store', 'a restaurant']",
+      "_raw_label_field": "1",
+      "error": "Traceback (most recent call last):\n  File \"/kaggle/src/script.py\", line 190, in main\n    out = model(**forced_inputs)\n          ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/utils/generic.py\", line 939, in wrapper\n    output = func(self, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 1378, in forward\n    outputs = self.model(\n              ^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/utils/generic.py\", line 939, in wrapper\n    output = func(self, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 1248, in forward\n    outputs = self.language_model(\n              ^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/utils/generic.py\", line 1068, in wrapper\n    output = func(self, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/utils/output_capturing.py\", line 286, in wrapper\n    outputs = func(self, *args, **kwargs)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 868, in forward\n    hidden_states = decoder_layer(\n                    ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/modeling_layers.py\", line 109, in __call__\n    return super().__call__(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 751, in forward\n    hidden_states, _ = self.self_attn(\n                       ^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 685, in forward\n    attn_output, attn_weights = attention_interface(\n                                ^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/integrations/sdpa_attention.py\", line 158, in sdpa_attention_forward\n    attn_output = torch.nn.functional.scaled_dot_product_attention(\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 15.71 GiB. GPU 0 has a total capacity of 14.56 GiB of which 4.58 GiB is free. Including non-PyTorch memory, this process has 9.97 GiB memory in use. Of the allocated memory 9.47 GiB is allocated by PyTorch, and 380.98 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n"
+    },
+    {
+      "index": 1,
+      "subset": "('Spanish', 'Mexico')",
+      "category": "Brands / products / companies",
+      "forward_seconds": 4.980966091156006,
+      "generate_seconds": 9.233770608901978,
+      "gold_answer": "Victoria, Modelo Especial, Negra Modelo",
+      "predicted_trace": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "gold_avg_logprob": NaN,
+      "peak_gpu_mem_mb": 10687.29150390625
+    },
+    {
+      "index": 2,
+      "subset": "('Amharic', 'Ethiopia')",
+      "category": "Vehicles and Transportation",
+      "forward_seconds": 1.2055089473724365,
+      "generate_seconds": 1.3824183940887451,
+      "gold_answer": "Tankwa",
+      "predicted_trace": "A) Tankwa",
+      "gold_avg_logprob": -5.393772233823256,
+      "peak_gpu_mem_mb": 10687.29150390625
+    },
+    {
+      "index": 3,
+      "subset": "('Portuguese', 'Brazil')",
+      "category": "Cooking and food",
+      "error": "Traceback (most recent call last):\n  File \"/kaggle/src/script.py\", line 190, in main\n    out = model(**forced_inputs)\n          ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/utils/generic.py\", line 939, in wrapper\n    output = func(self, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 1378, in forward\n    outputs = self.model(\n              ^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/utils/generic.py\", line 939, in wrapper\n    output = func(self, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 1248, in forward\n    outputs = self.language_model(\n              ^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/utils/generic.py\", line 1068, in wrapper\n    output = func(self, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/utils/output_capturing.py\", line 286, in wrapper\n    outputs = func(self, *args, **kwargs)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 868, in forward\n    hidden_states = decoder_layer(\n                    ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/modeling_layers.py\", line 109, in __call__\n    return super().__call__(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 751, in forward\n    hidden_states, _ = self.self_attn(\n                       ^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 685, in forward\n    attn_output, attn_weights = attention_interface(\n                                ^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/integrations/sdpa_attention.py\", line 158, in sdpa_attention_forward\n    attn_output = torch.nn.functional.scaled_dot_product_attention(\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 14.54 GiB. GPU 0 has a total capacity of 14.56 GiB of which 3.76 GiB is free. Including non-PyTorch memory, this process has 10.80 GiB memory in use. Of the allocated memory 9.73 GiB is allocated by PyTorch, and 962.71 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n"
+    },
+    {
+      "index": 4,
+      "subset": "('Urdu', 'Pakistan')",
+      "category": "Objects / materials / clothing",
+      "forward_seconds": 8.368025064468384,
+      "generate_seconds": 13.624833345413208,
+      "gold_answer": "Wood",
+      "predicted_trace": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "gold_avg_logprob": NaN,
+      "peak_gpu_mem_mb": 12861.30615234375
+    },
+    {
+      "index": 5,
+      "subset": "('Indonesian', 'Indonesia')",
+      "category": "People and everyday life",
+      "forward_seconds": 0.9285683631896973,
+      "generate_seconds": 1.063368320465088,
+      "gold_answer": "Monday",
+      "predicted_trace": "B) Friday",
+      "gold_avg_logprob": -10.854844093322754,
+      "peak_gpu_mem_mb": 12861.30615234375
+    },
+    {
+      "index": 6,
+      "subset": "('Filipino', 'Philippines')",
+      "category": "Brands / products / companies",
+      "forward_seconds": 6.35731315612793,
+      "generate_seconds": 10.851796388626099,
+      "gold_answer": "Jollibee",
+      "predicted_trace": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "gold_avg_logprob": NaN,
+      "peak_gpu_mem_mb": 12861.30615234375
+    },
+    {
+      "index": 7,
+      "subset": "('Norwegian', 'Norway')",
+      "category": "Plants and animal",
+      "forward_seconds": 1.6046109199523926,
+      "generate_seconds": 1.6190485954284668,
+      "gold_answer": "Mountain",
+      "predicted_trace": "C",
+      "gold_avg_logprob": -8.736733436584473,
+      "peak_gpu_mem_mb": 12861.30615234375
+    },
+    {
+      "index": 8,
+      "subset": "('Spanish', 'Argentina')",
+      "category": "Public Figure and pop culture",
+      "forward_seconds": 5.986205577850342,
+      "generate_seconds": 6.469546318054199,
+      "gold_answer": "Signs from a neighborhood in the city of C\u00f3rdoba",
+      "predicted_trace": "A) Greeting the audience",
+      "gold_avg_logprob": -1.0076210776899568,
+      "peak_gpu_mem_mb": 12861.30615234375
+    },
+    {
+      "index": 9,
+      "subset": "('Minangkabau', 'Indonesia')",
+      "category": "Geography / buildings / landmarks",
+      "forward_seconds": 1.1252250671386719,
+      "generate_seconds": 1.2910716533660889,
+      "gold_answer": "Commercial airport",
+      "predicted_trace": "A) Commercial airport",
+      "gold_avg_logprob": -6.899342633085325,
+      "peak_gpu_mem_mb": 12861.30615234375
+    },
+    {
+      "index": 10,
+      "subset": "('Irish', 'Ireland')",
+      "category": "Public Figure and pop culture",
+      "forward_seconds": 0.33705902099609375,
+      "generate_seconds": 0.5332503318786621,
+      "gold_answer": "The Rubber Bandits",
+      "predicted_trace": "B) The Bags",
+      "gold_avg_logprob": -1.9685414767591283,
+      "peak_gpu_mem_mb": 12861.30615234375
+    },
+    {
+      "index": 11,
+      "subset": "('Bulgarian', 'Bulgaria')",
+      "category": "Geography / buildings / landmarks",
+      "forward_seconds": 2.0899343490600586,
+      "generate_seconds": 2.4014718532562256,
+      "gold_answer": "The house with the strawberries",
+      "predicted_trace": "B) The house with the blueberries",
+      "gold_avg_logprob": -2.1033282842952756,
+      "peak_gpu_mem_mb": 12861.30615234375
+    },
+    {
+      "index": 12,
+      "subset": "('Malay', 'Malaysia')",
+      "category": "Traditions / art / history",
+      "error": "Traceback (most recent call last):\n  File \"/kaggle/src/script.py\", line 190, in main\n    out = model(**forced_inputs)\n          ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/utils/generic.py\", line 939, in wrapper\n    output = func(self, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 1378, in forward\n    outputs = self.model(\n              ^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/utils/generic.py\", line 939, in wrapper\n    output = func(self, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 1248, in forward\n    outputs = self.language_model(\n              ^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/utils/generic.py\", line 1068, in wrapper\n    output = func(self, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/utils/output_capturing.py\", line 286, in wrapper\n    outputs = func(self, *args, **kwargs)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 868, in forward\n    hidden_states = decoder_layer(\n                    ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/modeling_layers.py\", line 109, in __call__\n    return super().__call__(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 751, in forward\n    hidden_states, _ = self.self_attn(\n                       ^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 685, in forward\n    attn_output, attn_weights = attention_interface(\n                                ^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/integrations/sdpa_attention.py\", line 158, in sdpa_attention_forward\n    attn_output = torch.nn.functional.scaled_dot_product_attention(\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 14.53 GiB. GPU 0 has a total capacity of 14.56 GiB of which 3.10 GiB is free. Including non-PyTorch memory, this process has 11.46 GiB memory in use. Of the allocated memory 9.88 GiB is allocated by PyTorch, and 1.44 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n"
+    },
+    {
+      "index": 13,
+      "subset": "('Bengali', 'India')",
+      "category": "Traditions / art / history",
+      "forward_seconds": 2.7149698734283447,
+      "generate_seconds": 5.961644649505615,
+      "gold_answer": "Ganesh",
+      "predicted_trace": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "gold_avg_logprob": NaN,
+      "peak_gpu_mem_mb": 12861.30615234375
+    },
+    {
+      "index": 14,
+      "subset": "('Sundanese', 'Indonesia')",
+      "category": "Geography / buildings / landmarks",
+      "forward_seconds": 5.860661745071411,
+      "generate_seconds": 5.951862335205078,
+      "gold_answer": "Independence spirit",
+      "predicted_trace": "D) Independence spirit",
+      "gold_avg_logprob": -5.065484534251179,
+      "peak_gpu_mem_mb": 12861.30615234375
+    },
+    {
+      "index": 15,
+      "subset": "('Telugu', 'India')",
+      "category": "Geography / buildings / landmarks",
+      "forward_seconds": 5.737924575805664,
+      "generate_seconds": 10.046091318130493,
+      "gold_answer": "Bollywood",
+      "predicted_trace": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "gold_avg_logprob": NaN,
+      "peak_gpu_mem_mb": 12861.30615234375
+    },
+    {
+      "index": 16,
+      "subset": "('Chinese', 'China')",
+      "category": "Traditions / art / history",
+      "forward_seconds": 0.5866053104400635,
+      "generate_seconds": 0.8308606147766113,
+      "gold_answer": "A man should stand strong",
+      "predicted_trace": "D) Hao Han Ge",
+      "gold_avg_logprob": -2.8922738678331372,
+      "peak_gpu_mem_mb": 12861.30615234375
+    },
+    {
+      "index": 17,
+      "subset": "('Igbo', 'Nigeria')",
+      "category": "Sports and recreation",
+      "forward_seconds": 0.33507323265075684,
+      "generate_seconds": 0.5180501937866211,
+      "gold_answer": "Super Eagles",
+      "predicted_trace": "A) Super Eagles",
+      "gold_avg_logprob": -4.676941299811006,
+      "peak_gpu_mem_mb": 12861.30615234375
+    },
+    {
+      "index": 18,
+      "subset": "('Spanish', 'Colombia')",
+      "category": "Cooking and food",
+      "forward_seconds": 6.4304914474487305,
+      "generate_seconds": 10.954643249511719,
+      "gold_answer": "Lulo",
+      "predicted_trace": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "gold_avg_logprob": NaN,
+      "peak_gpu_mem_mb": 12861.30615234375
+    },
+    {
+      "index": 19,
+      "subset": "('Tamil', 'India')",
+      "category": "Vehicles and Transportation",
+      "error": "Traceback (most recent call last):\n  File \"/kaggle/src/script.py\", line 207, in main\n    gen_ids = model.generate(**inputs, max_new_tokens=64, do_sample=False)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/generation/utils.py\", line 2802, in generate\n    result = decoding_method(\n             ^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/generation/utils.py\", line 3002, in _sample\n    outputs = self._prefill(\n              ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/generation/utils.py\", line 4109, in _prefill\n    return self(**model_inputs, return_dict=True)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/utils/generic.py\", line 939, in wrapper\n    output = func(self, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 1378, in forward\n    outputs = self.model(\n              ^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/utils/generic.py\", line 939, in wrapper\n    output = func(self, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 1248, in forward\n    outputs = self.language_model(\n              ^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/utils/generic.py\", line 1068, in wrapper\n    output = func(self, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/utils/output_capturing.py\", line 286, in wrapper\n    outputs = func(self, *args, **kwargs)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 868, in forward\n    hidden_states = decoder_layer(\n                    ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/modeling_layers.py\", line 109, in __call__\n    return super().__call__(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 751, in forward\n    hidden_states, _ = self.self_attn(\n                       ^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1776, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1787, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py\", line 685, in forward\n    attn_output, attn_weights = attention_interface(\n                                ^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/integrations/sdpa_attention.py\", line 158, in sdpa_attention_forward\n    attn_output = torch.nn.functional.scaled_dot_product_attention(\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 548.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 72.81 MiB is free. Including non-PyTorch memory, this process has 14.49 GiB memory in use. Of the allocated memory 13.82 GiB is allocated by PyTorch, and 549.98 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n"
+    }
+  ],
+  "errors": [],
+  "n_items_collected": 20,
+  "subsets": [
+    "('Amharic', 'Ethiopia')",
+    "('Bengali', 'India')",
+    "('Bulgarian', 'Bulgaria')",
+    "('Chinese', 'China')",
+    "('Filipino', 'Philippines')",
+    "('Igbo', 'Nigeria')",
+    "('Indonesian', 'Indonesia')",
+    "('Irish', 'Ireland')",
+    "('Malay', 'Malaysia')",
+    "('Minangkabau', 'Indonesia')",
+    "('Norwegian', 'Norway')",
+    "('Portuguese', 'Brazil')",
+    "('Romanian', 'Romania')",
+    "('Spanish', 'Argentina')",
+    "('Spanish', 'Colombia')",
+    "('Spanish', 'Mexico')",
+    "('Sundanese', 'Indonesia')",
+    "('Tamil', 'India')",
+    "('Telugu', 'India')",
+    "('Urdu', 'Pakistan')"
+  ],
+  "example_keys": [
+    "Category",
+    "ID",
+    "Image Source",
+    "Image Type",
+    "Label",
+    "License",
+    "Options",
+    "Question",
+    "Subset",
+    "Translated Options",
+    "Translated Question",
+    "image"
+  ],
+  "model_load_seconds": 45.92215418815613,
+  "summary": {
+    "n_ok": 16,
+    "n_failed": 4,
+    "avg_forward_seconds": 3.4155714213848114,
+    "avg_generate_seconds": 5.170858010649681,
+    "avg_total_seconds_per_condition": 8.586429432034492,
+    "peak_gpu_mem_mb": 12861.30615234375
+  }
+}
