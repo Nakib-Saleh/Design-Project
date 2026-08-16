@@ -1,0 +1,156 @@
+[
+  {
+    "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "calls": [
+      {
+        "item_id": "calib_00",
+        "seconds": 5.696818590164185,
+        "correct": true,
+        "trace": "B) a place for lifeguards",
+        "gen_confidence": 0.8957336743672689
+      },
+      {
+        "item_id": "calib_01",
+        "seconds": 3.7279393672943115,
+        "correct": true,
+        "trace": "C) Victoria, Modelo Especial, Negra Modelo",
+        "gen_confidence": 0.9757545093695322
+      },
+      {
+        "item_id": "calib_02",
+        "seconds": 2.6510486602783203,
+        "correct": true,
+        "trace": "A) Tankwa",
+        "gen_confidence": 0.8754944205284119
+      },
+      {
+        "item_id": "calib_03",
+        "seconds": 3.25795316696167,
+        "correct": true,
+        "trace": "B) Guaran\u00e1 fruit extract",
+        "gen_confidence": 0.9638441279530525
+      },
+      {
+        "item_id": "calib_04",
+        "seconds": 3.4712345600128174,
+        "correct": true,
+        "trace": "B) Wood",
+        "gen_confidence": 0.8494629263877869
+      },
+      {
+        "item_id": "calib_05",
+        "seconds": 2.46036696434021,
+        "correct": false,
+        "trace": "B) Friday",
+        "gen_confidence": 0.6721835285425186
+      },
+      {
+        "item_id": "calib_06",
+        "seconds": 3.051088571548462,
+        "correct": true,
+        "trace": "D) Jollibee",
+        "gen_confidence": 0.9594130260603768
+      },
+      {
+        "item_id": "calib_07",
+        "seconds": 2.29262638092041,
+        "correct": false,
+        "trace": "C",
+        "gen_confidence": 0.691600501537323
+      },
+      {
+        "item_id": "calib_08",
+        "seconds": 2.6938493251800537,
+        "correct": false,
+        "trace": "A)",
+        "gen_confidence": 0.5813910762468973
+      },
+      {
+        "item_id": "calib_09",
+        "seconds": 2.751797676086426,
+        "correct": false,
+        "trace": "A) Greeting the audience",
+        "gen_confidence": 0.886867105960846
+      }
+    ],
+    "errors": [],
+    "load_seconds": 51.597262144088745
+  },
+  {
+    "model_id": "llava-hf/llava-onevision-qwen2-0.5b-ov-hf",
+    "calls": [
+      {
+        "item_id": "calib_00",
+        "seconds": 3.608137845993042,
+        "correct": false,
+        "trace": "D",
+        "gen_confidence": 0.5235784202814102
+      },
+      {
+        "item_id": "calib_01",
+        "seconds": 3.249709129333496,
+        "correct": true,
+        "trace": "C) Victoria, Modelo Especial, Negra Modelo",
+        "gen_confidence": 0.980538879831632
+      },
+      {
+        "item_id": "calib_02",
+        "seconds": 2.3117847442626953,
+        "correct": false,
+        "trace": "A",
+        "gen_confidence": 0.7627899646759033
+      },
+      {
+        "item_id": "calib_03",
+        "seconds": 3.076234817504883,
+        "correct": true,
+        "trace": "B) Guaran\u00e1 fruit extract",
+        "gen_confidence": 0.9850569143891335
+      },
+      {
+        "item_id": "calib_04",
+        "seconds": 3.5455894470214844,
+        "correct": false,
+        "trace": "B",
+        "gen_confidence": 0.7517107725143433
+      },
+      {
+        "item_id": "calib_05",
+        "seconds": 2.4438257217407227,
+        "correct": false,
+        "trace": "D",
+        "gen_confidence": 0.684184268116951
+      },
+      {
+        "item_id": "calib_06",
+        "seconds": 3.043358564376831,
+        "correct": true,
+        "trace": "D) Jollibee",
+        "gen_confidence": 0.9300301245280674
+      },
+      {
+        "item_id": "calib_07",
+        "seconds": 2.45455265045166,
+        "correct": false,
+        "trace": "D",
+        "gen_confidence": 0.893949568271637
+      },
+      {
+        "item_id": "calib_08",
+        "seconds": 2.7930779457092285,
+        "correct": false,
+        "trace": "C",
+        "gen_confidence": 0.879192441701889
+      },
+      {
+        "item_id": "calib_09",
+        "seconds": 2.7987422943115234,
+        "correct": false,
+        "trace": "A) Greeting the audience",
+        "gen_confidence": 0.9018793446677071
+      }
+    ],
+    "errors": [],
+    "load_seconds": 14.069459676742554
+  }
+]
