@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base: var(--bg-base);
+  --color-surface: var(--bg-surface);
+  --color-grid-line: var(--grid-line);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-brand: var(--accent-brand);
+
+  --font-display: var(--font-space-grotesk);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+:root {
+  --bg-base: #FAF7F0;
+  --bg-surface: #EFEFE9;
+  --grid-line: #D0CEC6;
+  --ink: #1C1712;
+  --ink-muted: #6B685F;
+  --accent-brand: #E0483E; /* Coral Red: UI Actions */
+  --accent-primary: #146C5B; /* Deep Teal: Ground Truth */
+  --accent-secondary: #E8A33D; /* Gold Amber: Prediction */
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--ink);
+  font-family: var(--font-sans), sans-serif;
+}
+
+@layer utilities {
+  .prose-col {
+    max-width: 68ch;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .text-ink-muted {
+    color: var(--ink-muted) !important;
+  }
+}
