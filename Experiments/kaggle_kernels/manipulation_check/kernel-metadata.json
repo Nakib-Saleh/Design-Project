@@ -1,0 +1,16 @@
+{
+  "id": "mediumnunulabib/culprit-vqa-manipulation-check",
+  "title": "CULPRIT-VQA Manipulation Check",
+  "code_file": "manipulation_check.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "true",
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": ["nakibsaleh/culprit-vqa-package"],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}
