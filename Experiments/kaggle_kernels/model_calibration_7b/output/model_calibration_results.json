@@ -1,0 +1,84 @@
+[
+  {
+    "model_id": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+    "calls": [
+      {
+        "item_id": "calib_00",
+        "seconds": 12.799947261810303,
+        "correct": true,
+        "trace": "B",
+        "gen_confidence": 0.979805052280426
+      },
+      {
+        "item_id": "calib_01",
+        "seconds": 10.213876485824585,
+        "correct": true,
+        "trace": "C",
+        "gen_confidence": 0.9037342965602875
+      },
+      {
+        "item_id": "calib_02",
+        "seconds": 8.69853949546814,
+        "correct": false,
+        "trace": "D",
+        "gen_confidence": 0.7086591571569443
+      },
+      {
+        "item_id": "calib_03",
+        "seconds": 10.556753635406494,
+        "correct": true,
+        "trace": "B",
+        "gen_confidence": 0.9822640717029572
+      },
+      {
+        "item_id": "calib_04",
+        "seconds": 14.101086616516113,
+        "correct": true,
+        "trace": "B) Wood",
+        "gen_confidence": 0.8493715524673462
+      },
+      {
+        "item_id": "calib_05",
+        "seconds": 9.708571434020996,
+        "correct": true,
+        "trace": "C",
+        "gen_confidence": 0.8585731685161591
+      },
+      {
+        "item_id": "calib_06",
+        "seconds": 11.46335220336914,
+        "correct": true,
+        "trace": "D",
+        "gen_confidence": 0.9984873831272125
+      },
+      {
+        "item_id": "calib_07",
+        "seconds": 10.396421670913696,
+        "correct": false,
+        "trace": "D",
+        "gen_confidence": 0.9908222556114197
+      },
+      {
+        "item_id": "calib_08",
+        "seconds": 11.854246616363525,
+        "correct": true,
+        "trace": "C",
+        "gen_confidence": 0.8358986079692841
+      },
+      {
+        "item_id": "calib_09",
+        "seconds": 10.278631687164307,
+        "correct": false,
+        "trace": "A",
+        "gen_confidence": 0.9610713124275208
+      }
+    ],
+    "errors": [],
+    "load_seconds": 126.52109432220459,
+    "peak_gpu_gb": 10.266881024,
+    "total_gpu_gb": 15.636037632,
+    "median_call_seconds": 10.396421670913696,
+    "max_call_seconds": 14.101086616516113,
+    "projected_audit_hours": 2.0215264360109964
+  }
+]
